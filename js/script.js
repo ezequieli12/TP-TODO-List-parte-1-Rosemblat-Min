@@ -34,8 +34,8 @@ const renderizarTareas = (filtro = "todas") => {
         li.innerHTML = `
             <span>${tarea.texto} <small>(${formatearFecha(tarea.creadaEn)})</small></span>
             <div>
-                <button onclick="alternarCompletada(${tarea.id})">✔</button>
-                <button onclick="eliminarTarea(${tarea.id})">❌</button>
+                <button onclick="alternarCompletada(${tarea.id})">✅</button>
+                <button onclick="eliminarTarea(${tarea.id})">🗑️</button>
             </div>
         `;
         listaTareas.appendChild(li);
